@@ -14,9 +14,8 @@ string add(string &a,string &b){
     int mini=min(a.size(), b.size());
     int c=0;
     string ans="",s;
-    int i;
     
-    for(i=0;i<mini;i++){
+    for(int i=0;i<mini;i++){
         int x=a[i]-48;
         int y=b[i]-48;
         int z=x+y+c;
@@ -31,8 +30,8 @@ string add(string &a,string &b){
     else
         s=b;
     
-    for(int j=i;j<s.size();j++){
-        int x=s[i]-48;
+    for(int j=mini;j<s.size();j++){
+        int x=s[j]-48;
         int z=x+c;
         
         if(z>1)
